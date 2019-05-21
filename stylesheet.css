@@ -1,0 +1,72 @@
+@font-face {
+  font-family:'HGRegular';
+  src: url('https://blog.aragon.org/assets/HKGrotesk-Regular.ttf');
+}
+
+body {
+  font-family: 'HGRegular', sans-serif;
+}
+
+.navbar .navbar-inner {
+  background: transparent;
+}
+
+form#searchBar {
+  text-align: left;
+}
+form#searchBar .search-query {
+  width: calc(100% - 130px);
+}
+
+form#searchBar button {   
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding: 10px 35px;
+  background: linear-gradient(130deg, rgb(0, 180, 230), rgb(0, 240, 224)) transparent;
+  border: solid 0 transparent;
+  border-radius: 3px;
+  outline: 0px;
+  display: grid;
+  overflow: hidden;
+}
+
+#searchBar button .icon-search {
+  color: white;
+}
+
+#docsSearch {
+  background: #1b1b1b;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 3em;
+  padding: 164px 0 100px 0;
+  margin-top: -64px;
+  color: white;
+  background-image: url(https://raw.githubusercontent.com/aragon/website/master/src/components/Discover/assets/background-discover4.png);
+  background-size: cover;
+}
+
+#docsSearch h1 {
+  max-width: 576px;
+  margin: auto;
+  line-height: 1.41;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.most-pop-articles h2 {
+  text-align: left;
+}
+
+.category {
+  background: #F9FAFC;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.0726053);
+  border-radius: 12px;
+  border: solid 0 transparent!important;
+}
+
+
+
