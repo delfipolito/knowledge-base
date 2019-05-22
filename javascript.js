@@ -1,12 +1,12 @@
-$('document').ready(function(){
-  
-  window.onhashchange = function() { 
+
+  function change() { 
+    console.log("change");
     if(window.location.pathname == '/') {
-      var body = document.body;
-      body.classList.add("principal-page");
+      console.log("if");
+      document.body.classList.add("principal-page");
     } else {
-      body.classList.remove("principal-page");
+      console.log("else");
+      document.body.classList.remove("principal-page");
     }
   }
-});
 

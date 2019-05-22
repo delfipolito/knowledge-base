@@ -68,5 +68,7 @@ form#searchBar button {
   border: solid 0 transparent!important;
 }
 
-
-
+.category:before{
+  content: '';
+  background:url('https://raw.githubusercontent.com/delfipolito/knowledge-base/master/assets/apps.svg');
+}
