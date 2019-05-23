@@ -4,21 +4,24 @@
 }
 
 body {
-  font-family: 'HGRegular', sans-serif;
+  font-family: 'HGRegular', 'HKGroteskRegular', sans-serif;
+  background: #F5F6FA;
 }
-
-.navbar .navbar-inner {
+.principal-page body {
+  background: white;
+}
+.principal-page .navbar .navbar-inner {
   background: transparent;
 }
 
-form#searchBar {
+#docsSearch form#searchBar {
   text-align: left;
 }
-form#searchBar .search-query {
+#docsSearch form#searchBar .search-query {
   width: calc(100% - 130px);
 }
 
-form#searchBar button {   
+#docsSearch form#searchBar button {   
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
   line-height: 1.5;
@@ -32,9 +35,11 @@ form#searchBar button {
   outline: 0px;
   display: grid;
   overflow: hidden;
+  font-family: 'HGRegular', 'HKGroteskRegular', sans-serif;
+  text-shadow: none;
 }
 
-#searchBar button .icon-search {
+#docsSearch #searchBar button .icon-search {
   color: white;
 }
 
@@ -63,12 +68,137 @@ form#searchBar button {
 
 .category {
   background: #F9FAFC;
+  position: relative;
+  overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.0726053);
   border-radius: 12px;
   border: solid 0 transparent!important;
 }
+.category h3 {
+  padding-top: 146px;
+  font-size: 28px;
+  line-height: 43px;
+  color: #27282D;
+  margin: 0;
+}
 
 .category:before{
   content: '';
-  background:url('https://raw.githubusercontent.com/delfipolito/knowledge-base/master/assets/apps.svg');
+  background:url('https://raw.githubusercontent.com/delfipolito/knowledge-base/master/assets/apps.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%; 
 }
+
+article .title {
+  font-size: 38px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  color: #27282D;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #000000;
+}
+
+
+.articleRatings {
+  background: #FFFFFF;
+  border: 1px solid #F4F6FA;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.0726053);
+  border-radius: 4px;
+}
+
+.articleRatings-question {
+  font-size: 18px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  color: #27282D;
+}
+
+.articleFoot p, .articleFoot time {
+  font-family: 'HKGroteskRegular', helvetica, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #838F9B;
+}
+
+
+#sbContact {
+  color: #838F9B;
+  border-bottom: 1px solid #838F9B;
+}
+
+article a {
+  color: #01BFE3;
+}
+
+#sidebar form .search-query {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.0726053);
+  border-radius: 4px;
+  border: solid white 0px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #999999;
+}
+
+#sidebar form .search-query button .icon-search {
+  color: #AFB8C2;
+}
+
+#sidebar h3 {
+  font-size: 14px;
+  line-height: 68px;
+  color: #27282D;
+}
+
+#sidebar .nav-list a, #sidebar .nav-list .active a {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #00B2D3;
+}
+
+.articleList li {
+  margin: 1em 0;
+}
+
+.most-pop-articles h2 {
+  font-size: 38px;
+  line-height: 68px;
+  color: #27282D;
+}
+
+.most-pop-articles.two-col .popArticles a {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #01BFE3;
+}
+
+.most-pop-articles {
+  max-width: auto;
+  width: 100%;
+  margin: 0 1%;
+}
+
+.category-list .category .article-count {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #01BFE3!important;
+}
+
